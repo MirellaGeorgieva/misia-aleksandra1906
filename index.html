@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Мисия 25: Александра</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <audio id="successSound" src="https://actions.google.com/sounds/v1/cartoon/clang_and_wobble.ogg" preload="auto"></audio>
+  <audio id="finalSound" src="https://actions.google.com/sounds/v1/cartoon/wood_plank_flicks.ogg" preload="auto"></audio>
+
+  <main class="app">
+    <section class="card">
+      <div class="top">
+        <span id="badge">Ниво 1 / 24</span>
+        <button id="musicBtn" class="small-btn">🎵 Музика</button>
+      </div>
+
+      <div class="progress"><div id="bar"></div></div>
+
+      <h1 id="title"></h1>
+      <img id="levelImage" class="level-image hidden" alt="Снимка към нивото" />
+      <div id="text" class="text"></div>
+
+      <a id="mapBtn" class="map-btn hidden" target="_blank" rel="noopener">📍 Отвори Google Maps</a>
+
+      <div id="answerBox" class="answer-box hidden">
+        <input id="answerInput" autocomplete="off" placeholder="Въведи отговор..." />
+        <button id="checkBtn">Провери</button>
+      </div>
+
+      <div id="photoBox" class="photo-box hidden">
+        <input id="photoInput" type="file" accept="image/*" />
+        <img id="preview" class="preview hidden" alt="Качена снимка" />
+        <button id="photoNextBtn" disabled>Продължи ✅</button>
+        <p class="hint">Снимката се показва само на този телефон. За да я видим и ние — прати я в групата.</p>
+      </div>
+
+      <div id="freeBox" class="free-box hidden">
+        <button id="nextBtn">Продължи ➜</button>
+      </div>
+
+      <p id="message" class="message"></p>
+    </section>
+  </main>
+
+  <div id="confetti"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
